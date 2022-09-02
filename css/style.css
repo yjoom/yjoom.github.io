@@ -1,0 +1,169 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script>/*侧边栏访客地图*/
+.card-ip a>img {
+    border-radius: 7px!important;
+    width: 100% !important;
+    margin-top: 5px!important;
+}
+
+/*全局吸底Aplayer模式*/
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px!important;
+}
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0!important;
+}
+
+/*侧边栏天气时钟*/
+.card-clock .card-background {
+    background-color: unset;
+    box-shadow: unset;
+}
+[data-theme=dark] .card-clock .card-background{
+    background-color: unset;
+}
+
+/*banner背景黑罩层*/
+#page-header::before {
+    background: transparent!important;
+}
+
+/* 背景磨砂 */
+#page-header.nav-fixed #nav,
+#recent-posts > .recent-post-item,
+#aside-content .card-widget,
+#page,
+#archive{
+    background: rgba(255,255,255,.65);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+#article-container .timeline .timeline-item .timeline-item-content,
+#page .xk-card{
+    background: rgba(255,255,255,.6);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+#article-container #ispeak p,
+#article-container #ispeak img{
+    margin: 0;
+}
+#ispeak .xk-card .xk-card-content{
+    white-space: normal;
+}
+.xk-card .xk-card-content img{
+    width: 48%;
+}
+
+#article-container.post-content h1:before, #article-container.post-content h2:before, #article-container.post-content h3:before, #article-container.post-content h4:before, #article-container.post-content h5:before, #article-container.post-content h6:before {
+    position: absolute;
+    top: calc(50% - 7px);
+    color: #f47466;
+    content: '\f0c1';
+    line-height: 1;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+#article-container.post-content h1:hover:before, #article-container.post-content h2:hover:before, #article-container.post-content h3:hover:before, #article-container.post-content h4:hover:before, #article-container.post-content h5:hover:before, #article-container.post-content h6:hover:before {
+    color: #49b1f5;
+}
+#article-container h1:hover a.headerlink:after, #article-container h2:hover a.headerlink:after, #article-container h3:hover a.headerlink:after, #article-container h4:hover a.headerlink:after, #article-container h5:hover a.headerlink:after, #article-container h6:hover a.headerlink:after {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+}
+
+#article-container a.headerlink:after {
+    float: right;
+    color: var(--headline-presudo);
+    content: '\f0c1';
+    font-size: .95em;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#article-container a.headerlink:after, #article-container.post-content h1:before, #article-container.post-content h2:before, #article-container.post-content h3:before, #article-container.post-content h4:before, #article-container.post-content h5:before, #article-container.post-content h6:before, #post .post-copyright:before, #post .post-outdate-notice:before, .fontawesomeIcon, .note:not(.no-icon)::before, hr:before {
+    display: inline-block;
+    font-weight: 600;
+    font-family: 'Font Awesome 6 Free';
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+#article-container.post-content h1, #article-container.post-content h2, #article-container.post-content h3, #article-container.post-content h4, #article-container.post-content h5, #article-container.post-content h6 {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+#article-container.post-content h1{
+    padding-left: 32px;
+}
+#article-container.post-content h2{
+    padding-left: 30px;
+}
+#article-container.post-content h3{
+    padding-left: 28px;
+}
+#article-container.post-content h4{
+    padding-left: 26px;
+}
+#article-container.post-content h5{
+    padding-left: 24px;
+}
+#article-container.post-content h6 {
+    padding-left: 24px;
+}
+
+#article-container.post-content h1:before {
+    margin-left: -26px;
+    font-size: 20px;
+}
+#article-container.post-content h2:before {
+    margin-left: -24px;
+    font-size: 18px;
+}
+#article-container.post-content h3:before {
+    margin-left: -22px;
+    font-size: 16px;
+}
+#article-container.post-content h4:before {
+    margin-left: -20px;
+    font-size: 14px;
+}
+#article-container.post-content h5:before {
+    margin-left: -18px;
+    font-size: 12px;
+}
+#article-container.post-content h6:before {
+    margin-left: -18px;
+    font-size: 12px;
+}
+#article-container.post-content h1:hover {
+    padding-left: 38px;
+}
+#article-container.post-content h2:hover {
+    padding-left: 36px;
+}
+#article-container.post-content h3:hover {
+    padding-left: 34px;
+}
+#article-container.post-content h4:hover {
+    padding-left: 32px;
+}
+#article-container.post-content h5:hover {
+    padding-left: 30px;
+}
+#article-container.post-content h6:hover {
+    padding-left: 30px;
+}
+
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap,
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a{
+    color: #777;
+}

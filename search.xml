@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo Butterfly主题配置踩坑处理(持续更新)</title>
+      <link href="/posts/d739a423/"/>
+      <url>/posts/d739a423/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>在hexo博客Butterfly主题中，使用各种插件、修改配置等遇到的坑及处理的过程记录</p><p>人生本来就是折腾，从一个坑跳进另一个坑。声生不息，乐此不疲~</p><hr><h2 id="配置哔哔点啥ispeak-bber线上报错不加载"><a href="#配置哔哔点啥ispeak-bber线上报错不加载" class="headerlink" title="配置哔哔点啥ispeak-bber线上报错不加载"></a>配置<a href="/bb/">哔哔</a>点啥ispeak-bber线上报错不加载</h2><p>本地<a href="http://localhost:4000/">http://localhost:4000/</a> 绑定了「<a href="/bb/">哔哔</a>点啥」公众号 、ios快捷指令、uTools插件，测试稳的一P</p><p>近期网站上线了，把hexo部署到线上后就出现了第一个报错，<a href="/bb/">哔哔</a>动态显示出不来，控制台显示是跨域的错误</p><blockquote><p>Access to XMLHttpRequest at ‘<a href="https://cloudbase-baas-$%#@%$*-shanghai.tcb-api.tencentcloudapi.com/web?env=cloudbase-baas-$%#@%$*&#39;">https://cloudbase-baas-$%#@%$*-shanghai.tcb-api.tencentcloudapi.com/web?env=cloudbase-baas-$%#@%$*&#39;</a> from origin ‘<a href="https://www.njiii.com&/#39;">https://www.njiii.com&#39;</a> has been blocked by CORS policy: Response to preflight request doesn’t pass access control check: No ‘Access-Control-Allow-Origin’ header is present on the requested resource.</p></blockquote><p><img src="/../img/img11.jpg"></p><p>首先想到是<em>SSL</em>证书安全问题，服务器安装SSL证书后还是不行。当初使用hexo就是喜欢这个能随时随地”<a href="/bb/">哔哔</a>“的功能，这下又得折腾一下子了…那么就从配置说明重新来一遍吧，后端配置参考：<a href="https://immmmm.com/bb-by-wechat-pro/">https://immmmm.com/bb-by-wechat-pro/</a>  浅过了一遍腾讯云开发部署绑定，好，没啥问题</p><p>再从底往上翻说明的时候发现了4.进入<u>环境-安全配置</u>，将网站域名添加到“<u>WEB安全域名</u>”</p><p><img src="/../img/img12.jpg"></p><p>这里也添加了域名（格式错了，自己马虎了）…最后改成泛域名*.njiii.com，搞定！</p><h2 id="留言板信笺hexo-butterfly-envelope插件报错"><a href="#留言板信笺hexo-butterfly-envelope插件报错" class="headerlink" title="留言板信笺hexo-butterfly-envelope插件报错"></a>留言板信笺hexo-butterfly-envelope插件报错</h2><p>使用<code>akilar</code>npm插件安装方式，安装后留言板没有变化，还有Git Bash报错</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure><p>试了<code>akilar</code>大佬的第二种修改源码方式添加还是报错，猜测可能自己步骤或者代码缩进没弄好，再删掉重新添加还是报错..</p><p>经历了2个小时的报错，一顿操作修改后，突然灵光一现。把之前建站时已经添加..\comments\index.md的留言文件夹删除，然后重新Git Bash</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-butterfly-envelope --save</span><br><span class="line">...</span><br><span class="line">hexo s</span><br><span class="line">...</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure><p>打开留言板页面，果断成功！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Butterfly主题踩坑 </tag>
+            
+            <tag> hexo留言板信笺 </tag>
+            
+            <tag> 哔哔点啥 </tag>
+            
+            <tag> hexo说说 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>得物毒扣滑板车，真的超酷的！</title>
+      <link href="/posts/abc73abd/"/>
+      <url>/posts/abc73abd/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?aid=472193538&bvid=BV1DT411c7JL&cid=809409121&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 记录生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 毒扣 </tag>
+            
+            <tag> 毒扣滑板 </tag>
+            
+            <tag> 手工 </tag>
+            
+            <tag> 手工diy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>天翼云服务器+腾讯云域名免费SSL证书申请实现https访问</title>
+      <link href="/posts/28c2fbe5/"/>
+      <url>/posts/28c2fbe5/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>因为某些原因（没钱，找的优惠活动）所以使用了目前的<code>天翼云</code>服务器和<code>腾讯云</code>域名，那么使用起来就比在同一个平台复杂了一点。不过没关系，正好可以练练手。</p><p><code>腾讯云</code>域名解析到<code>天翼云</code>服务器上，<code>天翼云</code>服务器安装的是Linux(CentOS7.2)系统，服务器安装<code>宝塔Linux面板</code>方便管理，<code>宝塔Linux面板</code>添加站点，这些都已配置好了。网上也有很多教程，不详细介绍了。</p><hr><h2 id="申请免费腾讯云SSL证书"><a href="#申请免费腾讯云SSL证书" class="headerlink" title="申请免费腾讯云SSL证书"></a>申请免费腾讯云SSL证书</h2><blockquote><p><a href="https://console.qcloud.com/ssl">https://console.qcloud.com/ssl</a></p></blockquote><ol><li>需要腾讯云账户且通过实名认证过的才可以申请，然后到后台进行申请</li></ol><p>   <img src="/../img/img1.jpg"></p><ol start="2"><li>选择免费版证书，免费一年</li></ol><p>   <img src="/../img/img2.jpg"></p><ol start="3"><li>填写域名，自动DNS验证，邮箱后提交申请</li></ol><p>   <img src="/../img/img3.jpg"></p><ol start="4"><li>提交申请一个工作日审核完成，<strong>证书在等待了50分钟后就颁发给我了</strong></li></ol><p>   <img src="/../img/img4.jpg"></p><ol start="5"><li>证书下发好，可以下载证书去部署到网站了</li></ol><p>   <img src="/../img/img5.jpg"></p><h2 id="Nginx-配置SSL证书"><a href="#Nginx-配置SSL证书" class="headerlink" title="Nginx 配置SSL证书"></a>Nginx 配置SSL证书</h2><ol><li>证书下载我们选择Nginx</li></ol><p>   <img src="/../img/img6.jpg"></p><ol start="2"><li>下载解压后是4个文件，我们需要.key和.pem，右键记事本打开可复制</li></ol><p>   <img src="/../img/img7.jpg"></p><ol start="3"><li>宝塔面板-网站-设置</li></ol><p>   <img src="/../img/img8.jpg"></p><ol start="4"><li>在SSL栏，把.key和.pem的内容粘贴对应的框内，然后打开强制HTTPS，保存</li></ol><p>   <img src="/../img/img9.jpg"></p><p>这样下来是是不是很简单，如果证书到期，我们也可以腾讯云SSL证书进行续期，一年只需要操作一次。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程文档 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 腾讯云域名SSL </tag>
+            
+            <tag> 免费SSL证书 </tag>
+            
+            <tag> http实现https访问 </tag>
+            
+            <tag> Nginx配置SSL证书 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/posts/4a17b156/"/>
+      <url>/posts/4a17b156/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
