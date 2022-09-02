@@ -167,3 +167,28 @@
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a{
     color: #777;
 }
+
+#ghbdages{
+    /*position: relative;*/
+}
+#ghbdages a{
+    margin-right: 5px;
+}
+/*悬停显示徽标提示语*/
+a.github-badge:hover:before {
+  position: absolute;
+  display: inline-block;
+  width: fit-content;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 100;
+  content: attr(data-title);
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  background-color: var(--text-bg-hover);
+}
